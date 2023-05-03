@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mountain Man Landscapes Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+
+    <!-- This is the topbar that hosts all the social links and phone number -->
+
+    <div class="top-bar">
+        <span><a href="tel:555555555"><ion-icon name="call-outline"></ion-icon> (555) 555-5555</a></span>
+        <ul>
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+    </div>
+
+    <!-- Navigation bar -->
+
+    <nav>
+        <div class="logo">
+            <a href="#"><img src="logo.png" alt="logo">Mountain Man Landscapes</a>
+        </div>
+        <div class="toggle">
+            <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- This is the navbar resizing hamburger script -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script>
+
+        $(function(){
+            $(".toggle").on("click", function(){
+                if($(".menu").hasClass("active")){
+                    $(".menu").removeClass("active");
+                    $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+                } else{
+                    $(".menu").addClass("active");
+                    $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+                }
+            });
+        });
+
+    </script>
+
+    <!-- Banner card that has the welcome image and text aswell as the gallery button -->
+
+    <div class="banner-card">
+        <div class="banner-text">
+            <h4>We don't beat around the bush.</h4>
+            <p>Landscapes has all the professional skills required to make your ideas come to life. With over 10 plus years of experience there is nothing our experts can't handle.</p>
+            <button onclick="#">View Gallery</button>
+        </div>
+    </div>
+
+    <!-- Services section hosts the services cards -->
+
+    <div class="section">
+        <div class="title">
+            <h1>Our Services</h1>
+        </div>
+        <div class="services">
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                </div>
+                    <h2>Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum dolore recusandae i</p>
+                    <a href="" class="button">Learn More</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+                    <h2>Build</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum dolore recusandae i</p>
+                    <a href="" class="button">Learn More</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-scissors"></i>
+                </div>
+                    <h2>Maintain</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum dolore recusandae i</p>
+                    <a href="" class="button">Learn More</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!--  Image Slider Start -->
+
+    <div class="slider">
+        <div class="slides">
+            <!-- Radio button for slider -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!-- slide images -->
+            <div class="slide first">
+                <img src="1.jpg" alt="">
+            </div>
+            <div class="slide second">
+                <img src="2.jpg" alt="">
+            </div>
+            <div class="slide third">
+                <img src="3.jpg" alt="">
+            </div>
+            <div class="slide fourth">
+                <img src="4.jpg" alt="">
+            </div>
+            <!-- automatic navigation start -->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+        </div>
+        <!-- Start of manual navigation -->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+
+</body>
+
+</html>
