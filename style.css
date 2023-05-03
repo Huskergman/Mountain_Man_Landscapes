@@ -95,7 +95,7 @@ nav a:hover{
     display: none;
 }
 
-@media screen and (max-width: 680px){
+@media only screen and (min-device-width : 320px) and (max-width : 680px) {
     nav{
         display: block;
         position: relative;
