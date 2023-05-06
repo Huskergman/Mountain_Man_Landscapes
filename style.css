@@ -68,7 +68,7 @@ nav a:hover{
     display: flex;
     align-items: center;
     vertical-align: center;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     resize: vertical;
     overflow-wrap: normal;
@@ -79,7 +79,7 @@ nav a:hover{
 }
 
 .logo img{
-    width: 250px;
+    width: 200px;
     padding: 0px 10px;
 }
 
@@ -99,7 +99,7 @@ nav a:hover{
     display: none;
 }
 
-@media only screen and (min-device-width : 320px) and (max-width : 680px) {
+@media only screen and (min-device-width : 200px) and (max-width : 680px) {
     nav{
         display: block;
         position: relative;
@@ -113,16 +113,6 @@ nav a:hover{
 
     .menu.active, .toggle{
         display: block;
-    }
-
-    .logo a{
-        display: flex;
-        align-items: center;
-        vertical-align: center;
-        font-size: 18px;
-        font-weight: bold;
-        resize: vertical;
-        overflow-wrap: normal;
     }
 
     .toggle{
