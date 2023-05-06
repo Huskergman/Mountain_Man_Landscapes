@@ -102,6 +102,11 @@ nav a:hover{
         padding: 15px 20px;
     }
 
+    .logo a{
+    width: flex;
+    display: -webkit-flex;
+    }
+
     .menu{
        margin-top: 15px;
        display: none;
