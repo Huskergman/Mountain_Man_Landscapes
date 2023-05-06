@@ -61,13 +61,17 @@ nav a:hover{
 
 .logo {
     flex: 1;
+    align-items: left;
 }
 
 .logo a{
     display: flex;
     align-items: center;
+    vertical-align: center;
     font-size: 22px;
     font-weight: bold;
+    resize: vertical;
+    overflow-wrap: normal;
 }
 
 .logo a:hover{
@@ -76,7 +80,7 @@ nav a:hover{
 
 .logo img{
     width: 200px;
-    margin-right: 20px;
+    padding: 0px 10px;
 }
 
 .menu{
@@ -100,11 +104,6 @@ nav a:hover{
         display: block;
         position: relative;
         padding: 15px 20px;
-    }
-
-    .logo a{
-    width: flex;
-    display: -webkit-flex;
     }
 
     .menu{
