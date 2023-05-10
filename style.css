@@ -502,3 +502,21 @@ nav a:hover{
 .bottom-bar a:hover{
     color: rgb(0, 174, 255);
 }
+
+/* new */
+
+body{
+    min-width: 320px;
+}
+  
+@media (max-width: 680px) {
+    .logo {
+      margin-right: 40px;
+    }
+}
+  
+@media (max-width: 479px) {
+    .logo a {
+      font-size:16px;
+    }
+}
