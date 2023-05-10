@@ -506,7 +506,7 @@ nav a:hover{
 /* new */
 
 body{
-    min-width: 320px;
+    min-width: 280px;
 }
   
 @media (max-width: 680px) {
