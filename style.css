@@ -506,17 +506,17 @@ nav a:hover{
 /* new */
 
 body{
-    min-width: 240px;
+    min-width: 180px;
 }
   
 @media (max-width: 680px) {
     .logo {
-      margin-right: 25px;
+      margin-right: 60px;
     }
 }
   
-@media (max-width: 400px) {
+@media (max-width: 360px) {
     .logo a {
-      font-size: 12px;
+      font-size: 10px;
     }
 }
