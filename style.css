@@ -511,12 +511,12 @@ body{
   
 @media (max-width: 680px) {
     .logo {
-      margin-right: 40px;
+      margin-right: 35px;
     }
 }
   
-@media (max-width: 479px) {
+@media (max-width: 440px) {
     .logo a {
-      font-size:16px;
+      font-size:14px;
     }
 }
