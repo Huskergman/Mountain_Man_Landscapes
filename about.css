@@ -150,12 +150,13 @@ nav a:hover{
     align-items: center;
     justify-content: center;
     padding-top: 60px;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
 }
 
 .container1 img {
     width: 90%;
     padding-left: 30px;
+    padding-bottom: 15px;
     aspect-ratio: 16:9;
     display: block;
 
@@ -171,6 +172,37 @@ nav a:hover{
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 30px;
+}
+
+/* bottom bar */
+.bottom-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background: #0B3442;
+    width: auto;
+}
+
+.bottom-bar span{
+    color: #fff;
+}
+
+.bottom-bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.bottom-bar li{
+    margin: 0px 5px;
+}
+
+.bottom-bar a{
+    color: #fff;
+}
+
+.bottom-bar a:hover{
+    color: rgb(0, 174, 255);
 }
 
 /* new */
