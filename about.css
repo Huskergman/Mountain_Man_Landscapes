@@ -143,6 +143,36 @@ nav a:hover{
 
 }
 
+.container1 {
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 15px;
+}
+
+.container1 img {
+    width: 90%;
+    padding-left: 30px;
+    aspect-ratio: 16:9;
+    display: block;
+
+}
+
+.container1 h1{
+    padding-right: 30px;
+    text-decoration: underline;
+    text-underline-offset: 12px;
+}
+
+.container1 p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+}
+
 /* new */
 
 body{
