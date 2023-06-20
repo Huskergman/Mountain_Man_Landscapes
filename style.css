@@ -158,15 +158,17 @@ nav a:hover{
     font-size: xxx-large;
     text-transform: uppercase;
     font-weight: bold;
+    text-shadow: #000 1px 0 10px;
     margin-top: 10px;
     margin-bottom: 5px;
     color: #fff;
 }
 
 .banner-text p{
-    font-size: large;
+    font-size: x-large;
     font-weight: bold;
     margin-bottom: 5px;
+    text-shadow: #000 1px 0 10px;
     color: #fff;
 }
 
@@ -177,7 +179,7 @@ nav a:hover{
     background-size: cover;
     background-position: center;
     text-align: center;
-    background-image: url('background.jpg')
+    background-image: url('photos/index/3.jpg')
 }
 
 .banner-text button{
@@ -428,13 +430,15 @@ nav a:hover{
     margin-top: 10px;
     margin-bottom: 5px;
     color: #fff;
+    text-shadow: #000 1px 0 10px
 }
 
 .banner-text2 p{
-    font-size: large;
+    font-size: x-large;
     font-weight: bold;
     margin-bottom: 5px;
     color: #fff;
+    text-shadow: #000 1px 0 10px
 }
 
 .banner-text2{
@@ -444,7 +448,7 @@ nav a:hover{
     background-size: cover;
     background-position: center;
     text-align: center;
-    background-image: url('background.jpg')
+    background-image: url('/photos/index/5.jpg')
 }
 
 .banner-text2 button{
