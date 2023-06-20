@@ -143,9 +143,34 @@ nav a:hover{
 
 }
 
+.container{
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
 
+.title{
+    margin-top: 2rem;
+}
 
+.photo-gallery{
+    display: flex;
+    gap: 20px;
+}
 
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
 
 
 /* bottom bar */
@@ -195,5 +220,9 @@ body{
 @media (max-width: 360px) {
     .logo a {
       font-size: 14px;
+    }
+
+    .container .box .dream{
+        width: 100%;
     }
 }
