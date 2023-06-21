@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="gallery.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="gallery.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </head>
+
 <body>
+
+    <!-- This is the topbar that hosts all the social links and phone number -->
+
+    <div class="top-bar">
+        <span><a href="tel:9704123491"><ion-icon name="call-outline"></ion-icon> (970) 412-3491</a></span>
+        <ul>
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+    </div>
+
+    <!-- Navigation bar -->
+
+    <nav>
+        <div class="logo">
+            <a href="home.html"><img src="logo.png" alt="logo">Mountain Man Landscapes</a>
+        </div>
+        <div class="toggle">
+            <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- This is the navbar resizing hamburger script -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script>
+
+        $(function(){
+            $(".toggle").on("click", function(){
+                if($(".menu").hasClass("active")){
+                    $(".menu").removeClass("active");
+                    $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+                } else{
+                    $(".menu").addClass("active");
+                    $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+                }
+            });
+        });
+
+    </script>
 
     <div class="container">
         <div class="heading">
@@ -40,11 +91,18 @@
 
         </div>
 
-        <div class="btn">
-            <a href="#">More</a>
-        </div>
+
 
     </div>  
+
+    <div class="bottom-bar">
+        <span><a href="tel:9704123491"><ion-icon name="call-outline"></ion-icon> (970) 412-3491</a></span>
+        <ul>
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+    </div>
 
 </body>
 </html>

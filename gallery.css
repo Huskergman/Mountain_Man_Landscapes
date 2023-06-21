@@ -7,6 +7,102 @@
     font-family: "Poppins", sans-serif;
 }
 
+body{
+    min-width: 180px;
+    background-color: #e6e6e6;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+/* top bar */
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background: #0B3442;
+}
+
+.top-bar span{
+    color: #fff;
+}
+
+.top-bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.top-bar li{
+    margin: 0px 5px;
+}
+
+.top-bar a{
+    color: #fff;
+}
+
+.top-bar a:hover{
+    color: rgb(0, 174, 255);
+}
+
+
+/* Nav bar */
+nav{
+    background: #537F3A;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    color: #000
+}
+
+nav a:hover{
+    color:#0B3442
+}
+
+.logo {
+    flex: 1;
+    align-items: left;
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    resize: vertical;
+    overflow-wrap: normal;
+}
+
+.logo a:hover{
+    color: #0B3442;
+}
+
+.logo img{
+    width: 200px;
+    padding: 0px 10px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li {
+    padding: 15px 10px;
+    font-size: 20px;
+}
+
+.toggle{
+    font-size: 30px;
+    display: none;
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -66,6 +162,36 @@ border-radius: 5px;
     letter-spacing: 3px;
 }
 
+/* bottom bar */
+.bottom-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background: #0B3442;
+}
+
+.bottom-bar span{
+    color: #fff;
+}
+
+.bottom-bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.bottom-bar li{
+    margin: 0px 5px;
+}
+
+.bottom-bar a{
+    color: #fff;
+}
+
+.bottom-bar a:hover{
+    color: rgb(0, 174, 255);
+}
+
 /* Media resizing */
 
 @media only screen and (max-width : 769px) {
@@ -96,4 +222,39 @@ border-radius: 5px;
         font-size: 1em;
     }
 
+}
+
+@media only screen and (min-device-width : 200px) and (max-width : 680px) {
+    nav{
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .menu{
+       margin-top: 15px;
+       display: none;
+    }
+
+    .menu.active, .toggle{
+        display: block;
+    }
+
+    .toggle{
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 680px) {
+    .logo {
+      margin-right: 20px;
+    }
+}
+  
+@media (max-width: 360px) {
+    .logo a {
+      font-size: 14px;
+    }
 }
