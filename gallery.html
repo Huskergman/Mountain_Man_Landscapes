@@ -1,116 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Mountain Man Landscapes Website</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="gallery.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
 </head>
-
 <body>
 
-    <!-- This is the topbar that hosts all the social links and phone number -->
-
-    <div class="top-bar">
-        <span><a href="tel:555555555"><ion-icon name="call-outline"></ion-icon> (555) 555-5555</a></span>
-        <ul>
-            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-        </ul>
-    </div>
-
-    <!-- Navigation bar -->
-
-    <nav>
-        <div class="logo">
-            <a href="home.html"><img src="logo.png" alt="logo">Mountain Man Landscapes</a>
-        </div>
-        <div class="toggle">
-            <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
-        </div>
-        <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="solutions.html">Solutions</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-    </nav>
-
-    <!-- This is the navbar resizing hamburger script -->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-
-    <script>
-
-        $(function(){
-            $(".toggle").on("click", function(){
-                if($(".menu").hasClass("active")){
-                    $(".menu").removeClass("active");
-                    $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
-                } else{
-                    $(".menu").addClass("active");
-                    $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
-                }
-            });
-        });
-
-    </script>
-
-    <!-- Photo Gallery -->
-
     <div class="container">
-
-        <h1 class="title">Photo Gallery</h1>
-
-        <div class="photo-gallery">
-            <div class="column">
-                <div class="photo">
-                    <img src="1.jpg" alt="">
-                    <img src="2.jpg" alt="">
-                    <img src="3.jpg" alt="">
-                    <img src="4.jpg" alt="">
-                </div>
+        <div class="heading">
+            <h1>Photo <span>Gallery</span></h1>
+        </div>
+        <div class="box">
+            <div class="dream">
+                <img src="/photos/gallery/1.jpg" alt="">
+                <img src="/photos/gallery/2.jpg" alt="">
+                <img src="/photos/gallery/3.jpg" alt="">
+                <img src="/photos/gallery/4.jpg" alt="">
+                <img src="/photos/gallery/5.jpg" alt="">
             </div>
+
+            <div class="dream">
+                <img src="/photos/gallery/6.jpg" alt="">
+                <img src="/photos/gallery/7.jpg" alt="">
+                <img src="/photos/gallery/8.jpg" alt="">
+                <img src="/photos/gallery/9.jpg" alt="">
+                <img src="/photos/gallery/10.jpg" alt="">
+            </div>
+
+            <div class="dream">
+                <img src="/photos/gallery/11.jpg" alt="">
+                <img src="/photos/gallery/12.jpg" alt="">
+                <img src="/photos/gallery/13.jpg" alt="">
+                <img src="/photos/gallery/14.jpg" alt="">
+                <img src="/photos/gallery/15.jpg" alt="">
+                <img src="/photos/gallery/16.jpg" alt="">
+            </div>
+
         </div>
 
-        <div class="photo-gallery">
-            <div class="column">
-                <div class="photo">
-                    <img src="5.jpeg" alt="">
-                    <img src="6.jpeg" alt="">
-                    <img src="7.jpg" alt="">
-                    <img src="8.jpg" alt="">
-                </div>
-            </div>
+        <div class="btn">
+            <a href="#">More</a>
         </div>
 
-        <div class="photo-gallery">
-            <div class="column">
-                <div class="photo">
-                    <img src="9.jpeg" alt="">
-                    <img src="13.jpeg" alt="">
-                    <img src="11.jpeg" alt="">
-                    <img src="12.jpeg" alt="">
-                </div>
-            </div>
-        </div>
+    </div>  
 
-    </div>
-
-    <!-- Bottom Bar -->
-
-    <div class="bottom-bar">
-        <span><a href="tel:555555555"><ion-icon name="call-outline"></ion-icon> (555) 555-5555</a></span>
-        <ul>
-            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-        </ul>
-    </div>
-    
 </body>
-
 </html>

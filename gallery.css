@@ -4,225 +4,96 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body{
     font-family: "Poppins", sans-serif;
-    width: 100%;
-    background-color:  #e6e6e6;
-}
-
-a, a:hover{
-    text-decoration: none;
-}
-
-/* top bar */
-.top-bar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 25px;
-    background: #0B3442;
-}
-
-.top-bar span{
-    color: #fff;
-}
-
-.top-bar ul{
-    list-style: none;
-    display: flex;
-}
-
-.top-bar li{
-    margin: 0px 5px;
-}
-
-.top-bar a{
-    color: #fff;
-}
-
-.top-bar a:hover{
-    color: rgb(0, 174, 255);
-}
-
-
-/* Nav bar */
-nav{
-    background: #537F3A;
-    padding: 5px 20px;
-    display: flex;
-    align-items: center;
-}
-
-nav a{
-    color: #000
-}
-
-nav a:hover{
-    color:#0B3442
-}
-
-.logo {
-    flex: 1;
-    align-items: left;
-}
-
-.logo a{
-    display: flex;
-    align-items: center;
-    vertical-align: center;
-    font-size: 21px;
-    font-weight: bold;
-    resize: vertical;
-    overflow-wrap: normal;
-}
-
-.logo a:hover{
-    color: #0B3442;
-}
-
-.logo img{
-    width: 200px;
-    padding: 0px 10px;
-}
-
-.menu{
-    display: flex;
-    align-items: center;
-    list-style: none;
-}
-
-.menu li {
-    padding: 15px 10px;
-    font-size: 20px;
-}
-
-.toggle{
-    font-size: 30px;
-    display: none;
-}
-
-@media only screen and (min-device-width : 200px) and (max-width : 680px) {
-    nav{
-        display: block;
-        position: relative;
-        padding: 15px 20px;
-    }
-
-    .menu{
-       margin-top: 15px;
-       display: none;
-    }
-
-    .menu.active, .toggle{
-        display: block;
-    }
-
-    .toggle{
-        position: absolute;
-        top: 15px;
-        right: 20px;
-    }
-
-    .services{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .products{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .card{
-        width: 85%;
-        display: flex;
-        margin: 20px 0px;
-    }
-
 }
 
 .container{
-    max-width: 1224px;
-    width: 90%;
-    margin: auto;
-    padding: 40px 0;
-}
-
-.title{
-    margin-top: 2rem;
-}
-
-.photo-gallery{
-    display: flex;
-    gap: 20px;
-}
-
-.column{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-}
-
-.photo img{
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    object-fit: cover;
-}
-
-
-/* bottom bar */
-.bottom-bar{
-    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 25px;
-    background: #0B3442;
-    width: auto;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+
+.container .heading{
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.container .heading h1{
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #000;
+}
+
+.container .heading h1 span{
+    font-weight: 100;
 
 }
 
-.bottom-bar span{
-    color: #fff;
-}
-
-.bottom-bar ul{
-    list-style: none;
+.container .box{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.bottom-bar li{
-    margin: 0px 5px;
+.container .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
 }
 
-.bottom-bar a{
+.container .box .dream img{
+width: 100%;
+padding-bottom: 15px;
+border-radius: 5px;
+}
+
+.container .btn{
+    margin: 40px 0 70px 0;
+    background: #0B3442;
+    padding: 15px 40px;
+    border-radius: 5px;
+}
+
+.container .btn a{
     color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 3px;
 }
 
-.bottom-bar a:hover{
-    color: rgb(0, 174, 255);
-}
+/* Media resizing */
 
-/* new */
-
-body{
-    min-width: 180px;
-}
+@media only screen and (max-width : 769px) {
   
-@media (max-width: 680px) {
-    .logo {
-      margin-right: 20px;
-    }
-}
-  
-@media (max-width: 360px) {
-    .logo a {
-      font-size: 14px;
+    .container .box{
+        flex-direction: column;
     }
 
     .container .box .dream{
         width: 100%;
     }
+
+    .container .box .dream img{
+        width: 100%;
+        padding-bottom: 15px;
+        border-radius: 5px;
+        }
+
+}
+
+@media only screen and (max-width : 675px) {
+  
+    .container .heading{
+        width: 100%;
+    }
+    
+    .container .heading h1{
+        font-size: 1em;
+    }
+
 }
