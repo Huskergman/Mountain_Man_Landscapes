@@ -171,7 +171,7 @@ nav a:hover{
 .banner-text p{
     font-size: x-large;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     text-shadow: #000 1px 0 10px;
     color: #fff;
 }
@@ -186,7 +186,7 @@ nav a:hover{
     background-image: url('photos/index/3.jpg')
 }
 
-.banner-text button{
+.banner-text a {
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-weight: bold;
@@ -206,7 +206,7 @@ nav a:hover{
     transition-property: box-shadow, transform;
 }
 
-.banner-text button:hover, .banner-text button:focus, .banner-text button:active{
+.banner-text a:hover, .banner-text a:focus, .banner-text a:active{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
@@ -441,7 +441,7 @@ nav a:hover{
 .banner-text2 p{
     font-size: x-large;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     color: #fff;
     text-shadow: #000 1px 0 10px
 }
@@ -456,7 +456,7 @@ nav a:hover{
     background-image: url('/photos/index/5.jpg')
 }
 
-.banner-text2 button{
+.banner-text2 a{
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-weight: bold;
@@ -476,7 +476,7 @@ nav a:hover{
     transition-property: box-shadow, transform;
 }
 
-.banner-text2 button:hover, .banner-text2 button:focus, .banner-text2 button:active{
+.banner-text2 a:hover, .banner-text2 a:focus, .banner-text2 a:active{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
