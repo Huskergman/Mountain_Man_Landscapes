@@ -195,9 +195,9 @@ nav a:hover{
 }
 
 .container2 ul.serUL {
-    font-size: larger;
+    font-size: medium;
     align-text: left;
-    padding: 20px 20vh;
+    padding: 20px 0vh;
 
 }
 
